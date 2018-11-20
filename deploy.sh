@@ -30,10 +30,10 @@ deploy(){
 
 if [ $arg = 'snapshot' ] || [ $arg = 's' ];then
   ## 快照包发布
-  cd $REPOSITORY_PATH && deploy snapshot
+  deploy snapshot
 elif [ $arg = 'release' ] || [ $arg = 'r' ];then
   ## 正式包发布
-  cd $REPOSITORY_PATH && deploy release
+  deploy release
 else
   echo 'argument should be snapshot(s for short) or release(r for short). like: `sh deploy.sh snapshot` or `sh deploy.sh s`'
 fi
