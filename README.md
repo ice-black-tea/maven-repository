@@ -6,6 +6,8 @@ repositories {
 }
 ```
 
+# 依赖项
+
 ```groovy
 dependencies {
     compileOnly 'ice.black.tea:android-17:1.0.0' // android 4.2 (jelly bean)
